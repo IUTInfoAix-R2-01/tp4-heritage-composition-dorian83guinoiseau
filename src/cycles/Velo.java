@@ -29,12 +29,10 @@ public class Velo {
 		return braquet * frequenceCoupsDePedale;
 	}
 
-	@Override
 	public String toString() {
 		return "Velo [braquet=" + braquet + ", vitesse=" + vitesse + "]";
 	}
 
-	// TEST
 	public static void main(String[] args) {
 		Velo v = new Velo(3);
 		v.accelerer(10);
@@ -42,4 +40,3 @@ public class Velo {
 		System.out.println("Puissance: " + v.getPuissance(2));
 	}
 }
-

@@ -19,18 +19,15 @@ public class VeloElec extends Velo {
 		this.puissanceMoteur = puissanceMoteur;
 	}
 
-	@Override
 	public double getPuissance(double frequenceCoupsDePedale) {
 		return super.getPuissance(frequenceCoupsDePedale) + puissanceMoteur;
 	}
 
-	@Override
 	public String toString() {
 		return "VeloElec [" + super.toString() +
 				", puissanceMoteur=" + puissanceMoteur + "]";
 	}
 
-	// TEST
 	public static void main(String[] args) {
 		VeloElec ve = new VeloElec(3, 50);
 		ve.accelerer(15);
